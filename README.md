@@ -5,8 +5,16 @@
 [![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
 [![React](https://img.shields.io/badge/react-18+-61DAFB)](https://reactjs.org)
 
-![Screenshot da Aplicação](src/assets/screenshot.png)
-![Screenshot da Aplicação](src/assets/screenshot2.png)
+## 🎨 Interface
+
+<div align="center">
+  <h4>Página Principal</h4>
+  <img src="src/assets/screenshot.png" width="45%" style="border: 1px solid #eee; border-radius: 8px)">
+  
+  <h4>API da Doação</h4>
+  <img src="src/assets/screenshot2.png" width="45%" style="border: 1px solid #eee; border-radius: 8px">
+</div>
+
 
 > Projeto full-stack desenvolvido como trabalho final do curso Vai na Web, conectando doadores a leitores através de uma plataforma colaborativa.
 
