@@ -1,0 +1,77 @@
+
+header{
+    
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);
+}
+
+.boxLogo{
+    
+  
+  width: 23vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 15vh;
+  justify-content: space-evenly;
+  h1{
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.boxMenu{
+    
+    width: 35vw;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        a{
+            color: white;
+        }
+    }
+}
+
+.boxSearch{
+    position: relative;
+    border: solid 2px white ;
+    width: 17vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+
+    
+.boxInput {
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 0; 
+  flex: 1;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  color: white;
+
+  &::placeholder {
+      color: rgb(255, 255, 255); 
+  }
+}
+
+i {
+  position: absolute; 
+  right: 10px; 
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  }

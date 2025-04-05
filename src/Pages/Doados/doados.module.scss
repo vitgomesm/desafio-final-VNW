@@ -1,0 +1,133 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        color: #333;
+        margin: 0;
+    }
+}
+
+.limparButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #c82333;
+    }
+}
+
+.livrosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.livroCard {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-5px);
+
+        .removeButton {
+            opacity: 1;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    p {
+        color: #666;
+        margin: 0.25rem 0;
+    }
+}
+
+.removeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(220, 53, 69, 0.9);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.2s, background-color 0.2s;
+
+    &:hover {
+        background-color: #dc3545;
+    }
+}
+
+.loading, .error, .noResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.loading {
+    color: #666;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.noResults {
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 8px;
+    
+    p {
+        max-width: 600px;
+    }
+}
