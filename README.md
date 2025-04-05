@@ -1,7 +1,6 @@
 # 📚 Plataforma de Doação de Livros
 
 [![Deploy Status](https://img.shields.io/badge/deploy-Online-success)](https://api-doacao-livros.onrender.com)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
 [![React](https://img.shields.io/badge/react-18+-61DAFB)](https://reactjs.org)
 
