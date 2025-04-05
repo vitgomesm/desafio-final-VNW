@@ -1,4 +1,4 @@
-# 📚 BookShare - Plataforma de Doação de Livros
+# 📚 Plataforma de Doação de Livros
 
 [![Deploy Status](https://img.shields.io/badge/deploy-Online-success)](https://api-doacao-livros.onrender.com)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
@@ -9,12 +9,11 @@
 
 <div align="center">
   <h4>Página Principal</h4>
-  <img src="src/assets/screenshot.png" width="45%" style="border: 1px solid #eee; border-radius: 8px)">
+  <img src="https://i.postimg.cc/0zF9Fdk4/home.png" width="45%" style="border:1px solid #eee;border-radius:8px">
   
   <h4>API da Doação</h4>
-  <img src="src/assets/screenshot2.png" width="45%" style="border: 1px solid #eee; border-radius: 8px">
+  <img src="https://i.postimg.cc/R6Q9Wk7r/api.png" width="45%" style="border:1px solid #eee;border-radius:8px">
 </div>
-
 
 > Projeto full-stack desenvolvido como trabalho final do curso Vai na Web, conectando doadores a leitores através de uma plataforma colaborativa.
 
