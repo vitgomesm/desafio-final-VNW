@@ -1,6 +1,3 @@
-
-
-```markdown
 # 📚 BookShare - Plataforma de Doação de Livros
 
 [![Deploy Status](https://img.shields.io/badge/deploy-Online-success)](https://api-doacao-livros.onrender.com)
@@ -131,14 +128,10 @@ graph LR
 4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
-## 📝 Licença
-
-Distribuído sob licença MIT. Veja `LICENSE` para mais informações.
-
 ## ✨ Autora
 
 **Vitória Gomes**  
-[![LinkedIn](https://img.shields.io/badge/-vitgomesm-blue?style=flat&logo=Linkedin)](https://linkedin.com/in/vitgomesm) 
+[![LinkedIn](https://img.shields.io/badge/-vitgomesm-blue?style=flat&logo=Linkedin)](https://www.linkedin.com/in/vitoriagomes4) 
 [![GitHub](https://img.shields.io/badge/-vitgomesm-black?style=flat&logo=GitHub)](https://github.com/vitgomesm)
 
 ---
@@ -146,26 +139,3 @@ Distribuído sob licença MIT. Veja `LICENSE` para mais informações.
 <div align="center">
   Desenvolvido com ❤️ no programa <a href="https://vainaweb.com.br">Vai na Web</a>
 </div>
-```
-
-### 🔍 Melhorias Incluídas:
-1. **Badges profissionais** para status e tecnologias
-2. **Diagrama de deploy** usando Mermaid
-3. **Seção de monitoramento** com instruções específicas
-4. **Exemplos de código** formatados para fácil leitura
-5. **Links clicáveis** para todas as ferramentas
-6. **Seção de autora** com contatos profissionais
-
-### 📌 Para Personalizar:
-1. Substitua `screenshot.png` por uma imagem real do projeto
-2. Atualize os links das suas redes sociais
-3. Adicione um arquivo `LICENSE` (posso ajudar com isso)
-4. Insira a URL real da coleção Postman quando disponível
-
-Quer que eu:
-1. Gere uma coleção Postman completa para você?
-2. Crie um arquivo LICENSE MIT?
-3. Adicione instruções específicas para testes?
-4. Melhore alguma seção específica?
-
-Me avise! 😊
