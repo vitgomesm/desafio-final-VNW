@@ -10,6 +10,7 @@ Este é um projeto full-stack de um sistema de doação de livros, desenvolvido 
 - Axios
 - SCSS Modules
 - Vite
+- Render (Deploy)
 
 ### Backend
 - Flask
@@ -73,10 +74,23 @@ Remove um livro específico
 ### DELETE /livros/limpar
 Remove todos os livros do sistema
 
-## 🖥️ Portas
+## 🖥️ Ambiente
 
+### Desenvolvimento
 - Frontend: http://localhost:5176
 - Backend: http://localhost:5000
+
+### Produção
+- Frontend: https://desafio-final-vnw.onrender.com (ou sua URL do Render)
+
+## 🚀 Deploy
+
+O projeto está hospedado no Render. Para acessar a versão em produção, visite: https://desafio-final-vnw.onrender.com (substitua pela sua URL do Render)
+
+Para fazer deploy de novas alterações:
+1. Faça push das alterações para o repositório GitHub
+2. O Render automaticamente detectará as mudanças e fará um novo deploy
+3. Você pode acompanhar o progresso do deploy no dashboard do Render
 
 ## 📁 Estrutura do Projeto
 
