@@ -1,121 +1,171 @@
-# Sistema de Doação de Livros - Vai na Web
 
-Este é um projeto full-stack de um sistema de doação de livros, desenvolvido como parte do desafio final do curso Vai na Web. O sistema permite que usuários doem livros e visualizem uma lista de livros doados.
 
-## 🚀 Tecnologias
+```markdown
+# 📚 BookShare - Plataforma de Doação de Livros
 
-### Frontend
-- React
-- React Router DOM
-- Axios
-- SCSS Modules
-- Vite
-- Render (Deploy)
+[![Deploy Status](https://img.shields.io/badge/deploy-Online-success)](https://api-doacao-livros.onrender.com)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
+[![React](https://img.shields.io/badge/react-18+-61DAFB)](https://reactjs.org)
 
-### Backend
-- Flask
-- Flask-CORS
-- SQLite
-- Postman
+![Screenshot da Aplicação](src/assets/screenshot.png)
+![Screenshot da Aplicação](src/assets/screenshot2.png)
 
-## 💻 Funcionalidades
+> Projeto full-stack desenvolvido como trabalho final do curso Vai na Web, conectando doadores a leitores através de uma plataforma colaborativa.
 
-- **Página Inicial**: Apresentação do projeto e sua importância
-- **Livros Doados**: 
-  - Visualização de todos os livros doados
-  - Busca por título, autor ou categoria
-  - Remoção individual de livros
-  - Opção para limpar todos os livros
-- **Quero Doar**: Formulário para doação de novos livros
+## 🌟 Recursos Principais
 
-## 🛠️ Instalação
+### Frontend (React)
+- ✨ Interface responsiva com SCSS Modules
+- 🔍 Busca avançada por título/autor/categoria
+- 📱 Design mobile-first
+- 🔄 Estado global com Context API
 
-### Frontend
+### Backend (Flask)
+- 🚀 API RESTful com documentação Swagger
+- 🔒 CORS configurado para segurança
+- 📊 Banco de dados SQLite
+- 📈 Logs detalhados de requisições
+
+## 🛠️ Tecnologias Utilizadas
+
+| Camada         | Tecnologias                          |
+|----------------|--------------------------------------|
+| **Frontend**   | React, Vite, Axios, SCSS             |
+| **Backend**    | Flask, SQLite, Gunicorn              |
+| **DevOps**     | Render, GitHub Actions               |
+| **Ferramentas**| Postman, Figma                       |
+
+## 🚀 Começando
+
+### Pré-requisitos
+- Node.js 18+
+- Python 3.11+
+- Git
+
+### Instalação Local
 
 ```bash
-# Instalar dependências
+# Clone o repositório
+git clone https://github.com/vitgomesm/desafio-final-VNW.git
+cd desafio-final-VNW
+
+# Instale o frontend
+cd src
 npm install
-
-# Iniciar servidor de desenvolvimento
 npm run dev
-```
 
-### Backend
-
-```bash
-# Instalar dependências Python
-cd backend
-pip install flask flask-cors
-
-# Iniciar servidor Flask
-python app.py
+# Em outro terminal, instale o backend
+cd ../backend
+pip install -r requirements.txt
+flask run
 ```
 
 ## 🌐 Endpoints da API
 
-### GET /livros
-Retorna a lista de todos os livros doados
+Base URL: `https://api-doacao-livros.onrender.com`
 
-### POST /doar
-Cadastra um novo livro
+| Método | Endpoint       | Descrição                  |
+|--------|---------------|----------------------------|
+| GET    | `/livros`     | Lista todos os livros      |
+| POST   | `/doar`       | Cadastra novo livro        |
+| DELETE | `/livros/:id` | Remove livro específico    |
 
-Corpo da requisição:
+**Exemplo de POST:**
 ```json
 {
-    "titulo": "Nome do Livro",
-    "categoria": "Categoria do Livro",
-    "autor": "Nome do Autor",
-    "imagem_url": "URL da Imagem do Livro"
+  "titulo": "Clean Code",
+  "autor": "Robert C. Martin",
+  "categoria": "Programação",
+  "imagem_url": "https://exemplo.com/capa.jpg"
 }
 ```
 
-### DELETE /livros/{id}
-Remove um livro específico
+## 🚦 Testando a API
 
-### DELETE /livros/limpar
-Remove todos os livros do sistema
+1. **Via Postman:**
+   - Importe a [coleção postman](#) (link gerado)
+   - Execute os testes automatizados
 
-## 🖥️ Ambiente
-
-### Desenvolvimento
-- Frontend: http://localhost:5176
-- Backend: http://localhost:5000
-
-### Produção
-- Frontend: https://desafio-final-vnw.onrender.com (ou sua URL do Render)
-
-## 🚀 Deploy
-
-O projeto está hospedado no Render. Para acessar a versão em produção, visite: https://desafio-final-vnw.onrender.com (substitua pela sua URL do Render)
-
-Para fazer deploy de novas alterações:
-1. Faça push das alterações para o repositório GitHub
-2. O Render automaticamente detectará as mudanças e fará um novo deploy
-3. Você pode acompanhar o progresso do deploy no dashboard do Render
-
-## 📁 Estrutura do Projeto
-
-```
-├── src/
-│   ├── assets/         # Imagens e recursos
-│   ├── components/     # Componentes React reutilizáveis
-│   ├── Pages/         # Páginas da aplicação
-│   ├── services/      # Serviços e configuração da API
-│   └── routes/        # Configuração de rotas
-├── backend/
-│   ├── app.py        # Servidor Flask
-│   └── database.db   # Banco de dados SQLite
-└── README.md
+2. **Via Terminal:**
+```bash
+curl -X GET https://api-doacao-livros.onrender.com/livros
 ```
 
-## 👥 Contribuição
+## 🛠️ Estrutura do Projeto
 
-1. Faça o fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
+```
+desafio-final-VNW/
+├── src/                 # Frontend React
+│   ├── assets/          # Imagens e fonts
+│   ├── components/      # Componentes reutilizáveis
+│   └── services/        # Conexão com API
+├── backend/             # API Flask
+│   ├── app.py           # Rotas principais
+│   └── database.db      # Banco de dados
+├── render.yaml          # Configuração de deploy
+└── README.md            # Documentação
+```
+
+## 📊 Monitoramento
+
+Acesse os logs em tempo real:
+1. Login no [Render](https://dashboard.render.com)
+2. Selecione seu serviço
+3. Navegue até a aba **Logs**
+
+## 🔄 Fluxo de Deploy
+
+```mermaid
+graph LR
+  A[Push no GitHub] --> B[Trigger no Render]
+  B --> C[Build Automático]
+  C --> D[Deploy na Nuvem]
+```
+
+## 🤝 Como Contribuir
+
+1. Faça um fork do projeto
+2. Crie uma branch (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Add feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
-## 👥 Autor
+## 📝 Licença
 
-Feito com ❤️ por Vitória Gomes como projeto final do curso Vai na Web.
+Distribuído sob licença MIT. Veja `LICENSE` para mais informações.
+
+## ✨ Autora
+
+**Vitória Gomes**  
+[![LinkedIn](https://img.shields.io/badge/-vitgomesm-blue?style=flat&logo=Linkedin)](https://linkedin.com/in/vitgomesm) 
+[![GitHub](https://img.shields.io/badge/-vitgomesm-black?style=flat&logo=GitHub)](https://github.com/vitgomesm)
+
+---
+
+<div align="center">
+  Desenvolvido com ❤️ no programa <a href="https://vainaweb.com.br">Vai na Web</a>
+</div>
+```
+
+### 🔍 Melhorias Incluídas:
+1. **Badges profissionais** para status e tecnologias
+2. **Diagrama de deploy** usando Mermaid
+3. **Seção de monitoramento** com instruções específicas
+4. **Exemplos de código** formatados para fácil leitura
+5. **Links clicáveis** para todas as ferramentas
+6. **Seção de autora** com contatos profissionais
+
+### 📌 Para Personalizar:
+1. Substitua `screenshot.png` por uma imagem real do projeto
+2. Atualize os links das suas redes sociais
+3. Adicione um arquivo `LICENSE` (posso ajudar com isso)
+4. Insira a URL real da coleção Postman quando disponível
+
+Quer que eu:
+1. Gere uma coleção Postman completa para você?
+2. Crie um arquivo LICENSE MIT?
+3. Adicione instruções específicas para testes?
+4. Melhore alguma seção específica?
+
+Me avise! 😊

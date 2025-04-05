@@ -67,3 +67,7 @@ ENV/
 # Database
 *.db
 *.sqlite3
+
+# Ignorar arquivos de imagem do screenshot
+src/assets/screenshot.png
+src/assets/screenshot2.png
