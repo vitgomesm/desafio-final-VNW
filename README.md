@@ -66,7 +66,7 @@ flask run
 
 ## 🌐 Endpoints da API
 
-Base URL: `https://api-doacao-livros.onrender.com`
+Base URL: `https://api-doacao-livros-r81f.onrender.com`
 
 | Método | Endpoint       | Descrição                  |
 |--------|---------------|----------------------------|
