@@ -9,10 +9,10 @@
 
 <div align="center">
   <h4>Página Principal</h4>
-  <img src="https://i.postimg.cc/0zF9Fdk4/home.png" width="45%" style="border:1px solid #eee;border-radius:8px">
+  <img src="https://i.postimg.cc/R6Q9Wk7r/api.png" width="45%" style="border:1px solid #eee;border-radius:8px">
   
   <h4>API da Doação</h4>
-  <img src="https://i.postimg.cc/R6Q9Wk7r/api.png" width="45%" style="border:1px solid #eee;border-radius:8px">
+  <img src="https://i.postimg.cc/0zF9Fdk4/home.png" width="45%" style="border:1px solid #eee;border-radius:8px">
 </div>
 
 > Projeto full-stack desenvolvido como trabalho final do curso Vai na Web, conectando doadores a leitores através de uma plataforma colaborativa.
